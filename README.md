@@ -1,10 +1,10 @@
 # Peek
 
-A powerful static file server with Windows 11 style file manager interface. Built with Node.js, this tool allows you to serve static files and manage them through a beautiful web-based file explorer.
+A powerful static file explorer server. Built with Node.js, this tool allows you to serve static files and manage them through a beautiful web-based file explorer.
 
 ## Features
 
-- **Windows 11 Style Interface** - Modern UI similar to Windows File Explorer
+- **Minimal Style Interface** - Modern UI similar to Windows File Explorer
 - **File Management** - Create, edit, delete, and rename files and folders
 - **Directory Navigation** - Browse through nested folders easily
 - **Search Functionality** - Filter files in real-time
@@ -105,7 +105,7 @@ npm uninstall -g peek
 Start the server with default settings:
 
 ```bash
-node server.js start
+node index.js start
 ```
 
 > Then open your browser and navigate to http://localhost:3000
@@ -115,7 +115,7 @@ node server.js start
 Start interactive CLI mode:
 
 ```bash
-node server.js cli
+node index.js cli
 ```
 
 
@@ -131,19 +131,19 @@ node server.js cli
 Start server on port 8080:
 
 ```bash
-node server.js start --port 8080
+node index.js start --port 8080
 ```
 
 Start server with custom directory:
 
 ```bash
-node server.js start --dir ./myfiles
+node index.js start --dir ./myfiles
 ```
 
 Start CLI mode with custom settings:
 
 ```bash
-node server.js cli --port 3000 --dir ./downloads
+node index.js cli --port 3000 --dir ./downloads
 ```
 
 ### CLI Commands
@@ -302,7 +302,7 @@ You can modify these settings in the code:
 If port 3000 is already in use, start the server with a different port:
 
 ```bash
-node server.js start --port 8080
+node index.js start --port 8080
 ```
 
 ### Cannot Access Files
@@ -326,7 +326,7 @@ This means the file or directory doesn't exist. Check the path and try again.
 ### Running in Development Mode
 
 ```bash
-node server.js cli
+node index.js cli
 ```
 
 ### Adding New File Types
@@ -339,7 +339,7 @@ Edit the `#allowedFileTypes` array in the code:
 
 ### Customizing UI
 
-The UI HTML/CSS is generated in the `#generateWindows11Explorer` method. You can modify the styles and layout there.
+The UI HTML/CSS is generated in the `#generateUI` method. You can modify the styles and layout there.
 
 ## Browser Support
 
