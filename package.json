@@ -1,7 +1,7 @@
 {
   "name": "Peek",
   "version": "1.0.0",
-  "description": "Windows 11 style file explorer server with full file management capabilities via CLI and web interface",
+  "description": "A powerful static file explorer server with full file management capabilities via CLI and web interface",
   "license": "MIT",
   "author": "Aydope",
   "type": "module",
@@ -21,7 +21,6 @@
     "static-server",
     "http-server",
     "file-manager",
-    "windows-11",
     "cli",
     "nodejs",
     "peek"
